@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <b-container class="pt-4">
+    <b-row>
+      <!-- <b-col cols="12">
+        <h1><b>HOLA BIENVENIDIDO/A</b></h1>
+      </b-col> -->
+      <b-col>
+        <carousel-home></carousel-home>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import CarouselHome from '@/components/home/CarouselHome.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    CarouselHome
   }
 }
 </script>
